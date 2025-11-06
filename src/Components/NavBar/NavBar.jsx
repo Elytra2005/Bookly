@@ -4,8 +4,7 @@ import Logo from '../../assets/BooklyLogo.png';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { use, useEffect, useState } from 'react';
-import { useTheme } from '@emotion/react';
+import { useState } from 'react';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 export default function NavBar() {
@@ -19,13 +18,14 @@ export default function NavBar() {
     <>
         <nav className='nav-bar'> 
 
-            <div className="contain-2mobile">
-                    <div className='flex items-center'>
-                        <img src={Logo} alt='logo bookly' className='logo-width w-8 h-8' />
+            <div className="contain-2mobile flex w-5 h-5flex-row justify-between items-center">
+                    <div className='flex w-full flex-row items-center'>
+                        {/* responsive logo: small on mobile, larger on md/lg screens, preserve aspect ratio */}
+                        <img src={Logo} alt='logo bookly' className='flex-shrink-0 sm:w-48 md:w-64 lg:w-80 h-auto block' />
                     </div>
 
                     <div className='contain-burger'>
-                             {clickStatus ? <FontAwesomeIcon  onClick={clickDisplay} className='burger-menue' icon={faBars} /> : <FontAwesomeIcon  onClick={clickDisplay} className='burger-menue' icon={faXmark} />}   
+                             {!clickStatus ? <FontAwesomeIcon  onClick={clickDisplay} className='burger-menue' icon={faBars} /> : <FontAwesomeIcon  onClick={clickDisplay} className='burger-menue' icon={faXmark} />}   
                     </div>
             </div>
         
