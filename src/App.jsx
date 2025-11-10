@@ -1,8 +1,8 @@
 import './App.css'
 import { BrowserRouter as Router, Routes, Route, Link, Navigate  } from 'react-router-dom';
 import Home from './Pages/Home/Home'
-import SignUp from './Pages/SignUp/signup';
-import About from './Pages/About/about';
+import SignUp from './Pages/SignUp/Signup';
+import About from './Pages/About/About';
 import Login from './Pages/Login/Login';
 import NotFound from './Pages/404/Error'
 import "tailwindcss";

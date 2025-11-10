@@ -1,12 +1,22 @@
 @import "tailwindcss";
+@import "@fontsource/bangers";
+@import "@fontsource/rammetto-one";
+@import "@fontsource-variable/urbanist";
+
 
 
 @theme {
+  /* list of fonts to use throughout the app not sure which one to use */
   --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --cartoon-font: 'Bangers', cursive, system-ui;
+  --cartoon-font-2: 'Rammetto One', system-ui;
+  --clean-font: 'Urbanist', sans-serif;
 }
 
 :root {
-  font-family: sans-serif;
+  font-family: var(--cartoon-font-2);
+  letter-spacing: 1px;
+  font-weight: 500;
 }
 
 * {
