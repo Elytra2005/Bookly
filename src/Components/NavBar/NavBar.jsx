@@ -1,6 +1,6 @@
 import '../NavBar/NavBar.css'
 import "tailwindcss";
-import Logo from '../../assets/BooklyLogo.png';
+import Logo from '../../assets/Bookly.png';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -18,10 +18,10 @@ export default function NavBar() {
     <>
         <nav className='nav-bar'> 
 
-            <div className="contain-2mobile flex w-5 h-5flex-row justify-between items-center">
-                    <div className='flex w-full flex-row items-center'>
+            <div className="contain-2mobile flex flex-row justify-between items-center">
+                    <div className=''>
                         {/* responsive logo: small on mobile, larger on md/lg screens, preserve aspect ratio */}
-                        <img src={Logo} alt='logo bookly' className='flex-shrink-0 sm:w-48 md:w-64 lg:w-80 h-auto block' />
+                        <img src={Logo} alt='logo bookly' className='logo-width flex-shrink-0 sm:w-48 md:w-64 lg:w-80 h-auto block' />
                     </div>
 
                     <div className='contain-burger'>

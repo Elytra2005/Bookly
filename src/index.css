@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
 @import "tailwindcss";
 @import "@fontsource/bangers";
 @import "@fontsource/rammetto-one";
 @import "@fontsource-variable/urbanist";
-
+@import '@fontsource-variable/merriweather-sans';
 
 
 @theme {
@@ -11,16 +12,80 @@
   --cartoon-font: 'Bangers', cursive, system-ui;
   --cartoon-font-2: 'Rammetto One', system-ui;
   --clean-font: 'Urbanist', sans-serif;
+  --bold-font: 'Merriweather Sans Variable', sans-serif;
+  --text-font-clean: sans-serif, system-ui;
+  --cuphead-style: "Rye", serif;
+
 }
 
 :root {
-  font-family: var(--cartoon-font-2);
+  font-family: var(--cuphead-style);
   letter-spacing: 1px;
   font-weight: 500;
+}
+
+
+h2, h1, h3, h4, h5, h6 {
+  /* font-family: var(--clean-font); */
+  font-family: "Rye", serif;
+  font-weight: 900;
+}
+
+
+p, a {
+  /* font-family: var(--text-font-clean); */
+    font-family: "Rye", serif;
+  font-weight: 400;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+
+/* global size for footer and navigation */
+
+.logo-width {
+    width: 135px;
+    height: 170px;
+}
+
+
+/* global sytling */
+
+.bg-special {
+  background-color: rgb(254, 144, 79);
+  border: 4px solid #000;         
+  box-shadow: 6px 6px 0px #000;
+  -moz-webkit-box-shadow: 6px 6px 0px #000;
+}
+
+.bg-light-special {
+  background-color: #fef6e9;
+  color: #ff8f4b !important;
+}
+
+.border-cartoony {
+      border: 2px solid #e48d58;
+}
+
+.border-cartoony-invert {
+    border: 2px solid #fef6e9;
+}
+
+.bg-nice {
+  background-color: #ff8f4b;
+}
+
+
+.hover-nice:hover {
+  background-color: #ff8f4b;
+  /* for when we hover over the dates for the calendar component */
+  color: #fff;
+}
+
+.padding-30 {
+  padding: 30px;
 }

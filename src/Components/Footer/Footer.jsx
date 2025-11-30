@@ -1,7 +1,7 @@
 import '../Footer/Footer.css'
 import 'tailwindcss'
-import LogoFooter from '../../assets/BooklyLogo.png';
 import { Link } from 'react-router-dom';
+import FooterLogo from '../../assets/Bookly.png';
 export default function Footer() {
 
   const date = new Date();
@@ -14,11 +14,11 @@ export default function Footer() {
           <div className='footer-content'>
 
              <div className='content-main'>
-                <image src={LogoFooter} alt='logo bookly' className='footer-logo' />
-                <p>Business Description</p>
+                <img src={FooterLogo} alt='logo bookly' className='logo-width logo-mobile-footer' />
+                <p>Book your appointment directly with bookly. <br /> The fastest secure booking system that makes booking appointments easy.</p>
              </div>
 
-              <div className='content-main flex flex-col'>
+              <div className='content-main contain-link-footer'>
                 <h2 className='font-bold'>Quick Links</h2>
                 <Link to="/Home">Home</Link>
                 <Link to="/About">About</Link>

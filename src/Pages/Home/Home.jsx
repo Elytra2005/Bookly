@@ -6,10 +6,11 @@ import "tailwindcss";
 
 export default function Home() {
     return (
-      <>
-        <NavBar />
-        <Book />
-        <Footer />
-      </>
+      <div className="contain">
+            <NavBar />
+            <Book />
+            <Footer />
+      </div>
+
     )
 }
